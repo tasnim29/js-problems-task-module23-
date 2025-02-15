@@ -1,36 +1,37 @@
 //task1:Find the lowest number in the array below.
-/* function lowest(numbers){
-   let lowestNum = numbers[0];
-   for(const num of numbers){
-    if(num<lowestNum){
-        lowestNum=num;
+ function lowest(numbers){
+    let lowestNum = numbers[0];
+    for(const num of numbers){
+     if(num<lowestNum){
+         lowestNum=num;
+     }
     }
-   }
-   return lowestNum;
+    return lowestNum;
 }
+ const heights2 = [167, 190, 120, 165, 137];
+ const result = lowest(heights2);
+ console.log('First questions answer');
+ console.log(result);
 
-const heights2 = [167, 190, 120, 165, 137];
-const result = lowest(heights2);
-console.log(result);
 
-*/
 
 //-----------------------------------
 
 //task2:Find the friend with the smallest name.
-// function smallest(names){
-//     let smallestName = names[0];
-//     for(const name of names){
-//         if(name.length<smallestName.length){
-//             smallestName=name;
-//         }
-//     }
-//     return smallestName;
-// }
+function smallest(names){
+    let smallestName = names[0];
+    for(const name of names){
+        if(name.length<smallestName.length){
+            smallestName=name;
+        }
+    }
+    return smallestName;
+}
 
-// const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed','do'];
-// const result = smallest(heights2);
-// console.log(result);
+const friends = ['rahim', 'robin', 'rafi', 'ron', 'rashed','do'];
+const result2 = smallest(friends);
+console.log('second questions answer');
+console.log(result2);
 
 //------------------------
 
@@ -39,44 +40,46 @@ console.log(result);
 tablet = 15000 tk
 mobile = 20000 tk
 */
-// function calculateElectronicsBudget(allThings){
-//     let totalMoney = 0;
-//     for(const thing of allThings){
-//         totalMoney = totalMoney + thing.price * thing.quantity;
+function calculateElectronicsBudget(allThings){
+    let totalMoney = 0;
+    for(const thing of allThings){
+        totalMoney = totalMoney + thing.price * thing.quantity;
         
-//     }
-//     return totalMoney;
-// }
-// const things =[
-//     {name:'laptop', price:35000,quantity:2 },
-//     {name:'Tablet', price:15000,quantity:3 },
-//     {name:'Mobile', price:20000,quantity:4 },
-// ];
-// const totalMoney = calculateElectronicsBudget(things);
-// console.log(totalMoney);
+    }
+    return totalMoney;
+}
+const things =[
+    {name:'laptop', price:35000,quantity:2 },
+    {name:'Tablet', price:15000,quantity:3 },
+    {name:'Mobile', price:20000,quantity:4 },
+];
+const totalMoney = calculateElectronicsBudget(things);
+console.log('third questions answer');
+console.log(totalMoney);
 
 //task4:
 
-// function findAveragePhonePrice (allPhones){
-//     let sum = 0;
-//     for(const phone of allPhones){
-//         sum = sum + phone.price;
-//     }
+function findAveragePhonePrice (allPhones){
+    let sum = 0;
+    for(const phone of allPhones){
+        sum = sum + phone.price;
+    }
     
-//     avg = sum / allPhones.length;
-//     return  avg;
+    avg = sum / allPhones.length;
+    return  avg;
     
-// }
-// const phones = [
-//     { model: "PhoneA", brand: "Iphone", price: 95000 },
-//     { model: "PhoneB", brand: "Samsung", price: 40000 },
-//     { model: "PhoneC", brand: "Oppo", price: 26000 },
-//     { model: "PhoneD", brand: "Nokia", price: 35000 },
-//     { model: "PhoneE", brand: "Iphone", price: 105000 },
-//     { model: "PhoneF", brand: "HTC", price: 48000 },
-// ];
-// const avgPrice = findAveragePhonePrice (phones);
-// console.log(parseFloat(avgPrice).toFixed(2));
+}
+const phones = [
+    { model: "PhoneA", brand: "Iphone", price: 95000 },
+    { model: "PhoneB", brand: "Samsung", price: 40000 },
+    { model: "PhoneC", brand: "Oppo", price: 26000 },
+    { model: "PhoneD", brand: "Nokia", price: 35000 },
+    { model: "PhoneE", brand: "Iphone", price: 105000 },
+    { model: "PhoneF", brand: "HTC", price: 48000 },
+];
+const avgPrice = findAveragePhonePrice (phones);
+console.log('fourth questions answer');
+console.log(parseFloat(avgPrice).toFixed(2));
 
 // task:5
 // function calculateSalary(employeesInfo){
@@ -117,4 +120,5 @@ const employees = [
     { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
 ];
 const totalSalary = calculateSalary (employees);
+console.log('fifth questions answer');
 console.log('total salary provided by the company:',totalSalary);
